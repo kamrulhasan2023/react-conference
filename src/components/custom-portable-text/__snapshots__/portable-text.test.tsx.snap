@@ -1,0 +1,439 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render rich text section 1`] = `
+<article
+  class="normal-block-font-size-normal"
+>
+  <div
+    class="space-y-4 main-wrapper"
+  >
+    <h2
+      class="font-medium leading-[1.1] md:leading-[1.2] heading-one"
+      id="%231---lorem-ipsum-is-simply"
+    >
+      <span
+        class="text-color-one"
+      >
+        #1 - Lorem Ipsum is simply
+      </span>
+    </h2>
+    <p
+      class="normal"
+      id="521b4d80be61"
+    >
+      <a
+        class="underline text-secondary"
+        href="https://www.sanity.com"
+        target="_blank"
+      >
+        Sanity
+      </a>
+       
+      <a
+        class="underline text-secondary"
+        href="/"
+        rel="noreferrer noopener"
+        target="_blank"
+      >
+        offers
+      </a>
+       
+      a range of digital solutions for online businesses, 
+      from e-commerce storefronts to marketing sites and innovative mobile apps with fast structured content. Sanity’s goal is to help businesses improve the quality of their digital products and services and reduce their Time to Market.
+    </p>
+    <p
+      class="normal"
+      id="ea58243269f4"
+    >
+      <span
+        class="bg-success"
+      >
+        Tools and solutions introduced by Sanity
+      </span>
+       create a unified and developer-friendly content management environment, based on modern frameworks and flawless API integration. Solutions like headless commerce and headless CMS offer supreme customizability, scalability, and flexibility, and Sanity makes it simple and stress-free to integrate and deploy them for online businesses.
+    </p>
+    <p
+      class="normal"
+      id="1e8a7958e08b"
+    >
+      The platform offers convenient document querying through GraphQL and GROQ, as well as simple data management with structured content, with all the complicated work done for you over a cloud-hosted service - and on top of all, there’s a massive community of developers and creators from all over the world sharing their advice, tools, libraries, and more!
+    </p>
+    <br />
+    <figure>
+      <img
+        alt="error image"
+        data-nimg="1"
+        decoding="async"
+        height="400"
+        loading="lazy"
+        src="http://localhost/_next/image?url=%2Fimage-error%2Findex.jpg&w=828&q=75"
+        srcset="/_next/image?url=%2Fimage-error%2Findex.jpg&w=640&q=75 1x, /_next/image?url=%2Fimage-error%2Findex.jpg&w=828&q=75 2x"
+        style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+        width="400"
+      />
+    </figure>
+    <h2
+      class="font-medium leading-[1.1] md:leading-[1.2] heading-two"
+      id="984f842a122e"
+    >
+      <span
+        class="text-color-two"
+      >
+        Lorem Ipsum is simply dummy
+      </span>
+    </h2>
+    <h2
+      class="font-medium leading-[1.1] md:leading-[1.2] heading-two"
+      id="94c98802b7d5"
+    >
+      <span
+        class="text-color-two"
+      >
+        Title 2
+      </span>
+    </h2>
+    <p
+      class="normal"
+      id="0fc9921c004f"
+    >
+      Lorem ipsum dolor sit amet consectetur. Laoreet euismod dignissim et pellentesque sed egestas nec. Viverra urna pretium tortor vel blandit mattis. Et quis diam mi augue arcu enim. Magna placerat potenti consectetur eget eu nibh. Nunc semper gravida orci nulla tellus volutpat. Orci felis arcu faucibus at. Amet accumsan vitae in malesuada vestibulum. Ligula risus velit risus dolor fermentum nunc quisque quis.
+    </p>
+    <p
+      class="normal"
+      id="6861203dfa82"
+    >
+      Eu sagittis tristique pellentesque sed. Donec massa curabitur ut egestas tristique ac elementum. Nphasellus turpis id lacus ornare dui purus turpis sit. Ligula ac cras aliquam velit. Fermentum est volutpat enim odio leo massa. Eget ullamcorper nunc arcu magnis vitae nunc vitae pharetra.
+    </p>
+    <br />
+    <h2
+      class="font-medium leading-[1.1] md:leading-[1.2] heading-one"
+      id="%232---lorem-ipsum-is-simply-dummy"
+    >
+      <span
+        class="text-color-one"
+      >
+        #2 - Lorem Ipsum is simply dummy
+      </span>
+    </h2>
+    <div
+      class="overflow-hidden p-6 md:p-8 lg:p-10 xl:p-12 blockquote"
+    >
+      <article
+        class="normal-block-font-size-normal"
+      >
+        <div
+          class="space-y-4 main-wrapper"
+        >
+          <p
+            class="normal"
+            id="746e53098e03"
+          >
+            <em>
+              Lorem ipsum dolor sit amet consectetur. Laoreet euismod digniss et pellentesque sed egestas nec. Viverra urna pretium tortor vel blandit mattis. Et quis diam mi augue arcu enim. Magna placeraconsectetur eget eu nibh. Nunc semper gravida orci nulla tellus volutpat. Orci felis arcu faucibus at.
+            </em>
+          </p>
+        </div>
+      </article>
+    </div>
+    <p
+      class="normal"
+      id="e7700421184c"
+    >
+      Lorem ipsum dolor sit amet consectetur. Laoreet euismod dignissim et pellentesque sed egestas nec. Viverra urna pretium tortor vel blandit mattis. Et quis diam mi augue arcu enim. Magna placerat potenti consectetur eget eu nibh. Nunc semper gravida orci nulla tellus volutpat. Orci felis arcu faucibus at. Amet accumsan vitae in malesuada vestibulum. Ligula risus velit risus dolor fermentum nunc quisque quis.
+    </p>
+    <p
+      class="normal"
+      id="a09da5cde0ed"
+    >
+      Eu sagittis tristique pellentesque sed. Donec massa curabitur ut egestas tristique ac elementum. Nphasellus turpis id lacus ornare dui purus turpis sit. Ligula ac cras aliquam velit. Fermentum est volutpat enim odio leo massa. Eget ullamcorper nunc arcu magnis vitae nunc vitae pharetra.
+    </p>
+    <h3
+      class="font-normal leading-[1.3] md:leading-[1.2] heading-three"
+      id="bff38b041985"
+    >
+      <span
+        class="text-color-three"
+      >
+        Lorem Ipsum is simply dummy
+      </span>
+    </h3>
+    <p
+      class="normal"
+      id="015f68db76bf"
+    >
+      Sanity Connect is a powerful Shopify app that allows e-commerce site owners to create beautiful and fast-performing storefronts, designed and engineered by Sanity.io - the creators of a flexible, unified content platform built to create custom-made digital solutions based on React, Gatsby, Next, Vue, and more.
+    </p>
+    <p
+      class="normal"
+      id="9af88f2d81ca"
+    >
+      To attract new customers and retain those who have already made purchases, online companies need to rely on exceptional content. With the Sanity Connect app, you can install, manage, and edit your page’s content in real-time, using a simple and user-friendly UI that holds a range of powerful features. Sanity is an official partner of Shopify, and the two platforms cooperate to create the best storefront solutions.
+    </p>
+    <br />
+    <figure>
+      <img
+        alt="error image"
+        data-nimg="1"
+        decoding="async"
+        height="400"
+        loading="lazy"
+        src="http://localhost/_next/image?url=%2Fimage-error%2Findex.jpg&w=828&q=75"
+        srcset="/_next/image?url=%2Fimage-error%2Findex.jpg&w=640&q=75 1x, /_next/image?url=%2Fimage-error%2Findex.jpg&w=828&q=75 2x"
+        style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+        width="400"
+      />
+    </figure>
+    <h2
+      class="font-medium leading-[1.1] md:leading-[1.2] heading-one"
+      id="%233---lorem-ipsum"
+    >
+      <span
+        class="text-color-one"
+      >
+        #3 - Lorem Ipsum
+      </span>
+    </h2>
+    <p
+      class="normal"
+      id="1078fc1db900"
+    >
+      Lorem ipsum dolor sit amet consectetur. Laoreet euismod dignissim et pellentesque sed egestas nec. Viverra urna pretium tortor vel blandit mattis. Et quis diam mi augue arcu enim. Magna placerat potenti consectetur eget eu nibh. Nunc semper gravida orci nulla tellus volutpat. Orci felis arcu faucibus at. Amet accumsan vitae in malesuada vestibulum. Ligula risus velit risus dolor fermentum nunc quisque quis.
+    </p>
+    <p
+      class="normal"
+      id="89e1281f8d43"
+    >
+      Eu sagittis tristique pellentesque sed. Donec massa curabitur ut egestas tristique ac elementum. Nphasellus turpis id lacus ornare dui purus turpis sit. Ligula ac cras aliquam velit. Fermentum est volutpat enim odio leo massa. Eget ullamcorper nunc arcu magnis vitae nunc vitae pharetra.
+    </p>
+    <br />
+    <h2
+      class="font-medium leading-[1.1] md:leading-[1.2] heading-one"
+      id="%234---reel-video"
+    >
+      <span
+        class="text-color-one"
+      >
+        #4 - Reel Video
+      </span>
+    </h2>
+    <iframe
+      allow="accelerometer; encrypted-media; gyroscope; picture-in-picture;"
+      class="aspect-video w-full max-w-full"
+      src="https://stream.mux.com/6nJQvGQWyuTlpqM7O01u4jbVgls2164Rx7MZp6QNarWo/high.mp4"
+    />
+    <h2
+      class="font-medium leading-[1.1] md:leading-[1.2] heading-one"
+      id="%235---regular-video"
+    >
+      <span
+        class="text-color-one"
+      >
+        #5 - Regular Video
+      </span>
+    </h2>
+    <iframe
+      allow="accelerometer; encrypted-media; gyroscope; picture-in-picture;"
+      class="aspect-video w-full max-w-full"
+      src="https://www.youtube.com/embed/xW9DJTvB3NI"
+    />
+    <h2
+      class="font-medium leading-[1.1] md:leading-[1.2] heading-one"
+      id="%236---code-input"
+    >
+      <span
+        class="text-color-one"
+      >
+        #6 - Code Input
+      </span>
+    </h2>
+    <br />
+    <div
+      class="grid place-items-center bg-black min-h-screen w-full"
+      role="presentation"
+    >
+      <div
+        class="loader"
+      />
+    </div>
+    <br />
+    <h3
+      class="font-normal leading-[1.3] md:leading-[1.2] heading-three"
+      id="12c0a768e69d"
+    >
+      <span
+        class="text-color-one"
+      >
+        Advantages and disadvantages of using ReactJS.
+      </span>
+    </h3>
+    <ul
+      class="ml-6 md:ml-7 xl:ml-8 list-outside list list-disc"
+    >
+      <li
+        class="list-item"
+      >
+        <span
+          class="text-color-two"
+        >
+          ReactJS
+        </span>
+         makes it easy to dynamically render ordered and unordered lists based on changing data. This is especially useful when the data is coming from an external source that may change frequently.
+      </li>
+      <li
+        class="list-item"
+      >
+        <span
+          class="text-color-two"
+        >
+          ReactJS
+        </span>
+         is designed to be efficient and scalable, which means that even when rendering large lists, the performance of the application will not suffer.
+        <ul
+          class="ml-6 md:ml-7 xl:ml-8 list-outside list list-[circle]"
+        >
+          <li
+            class="list-item"
+          >
+            level-2
+          </li>
+          <li
+            class="list-item"
+          >
+            level-2
+            <ul
+              class="ml-6 md:ml-7 xl:ml-8 list-outside list list-[square]"
+            >
+              <li
+                class="list-item"
+              >
+                level-3
+              </li>
+              <li
+                class="list-item"
+              >
+                level-3
+                <ul
+                  class="ml-6 md:ml-7 xl:ml-8 list-outside list list-[circle]"
+                >
+                  <li
+                    class="list-item"
+                  >
+                    level-4
+                  </li>
+                  <li
+                    class="list-item"
+                  >
+                    level-4
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li
+        class="list-item"
+      >
+        <span
+          class="text-color-two"
+        >
+          ReactJS
+        </span>
+         allows for easy customization and styling of ordered and unordered lists, thanks to its modular architecture and use of CSS.
+      </li>
+    </ul>
+    <br />
+    <ol
+      class="ml-6 md:ml-7 xl:ml-8 list-outside list list-decimal"
+    >
+      <li
+        class="list-item"
+      >
+        <span
+          class="text-color-two"
+        >
+          ReactJS 
+        </span>
+        can have a steep learning curve for beginners, especially those who are not familiar with the concepts of JavaScript, HTML, and CSS.
+        <ol
+          class="ml-6 md:ml-7 xl:ml-8 list-outside list list-[lower-alpha]"
+        >
+          <li
+            class="list-item"
+          >
+            Level-2
+            <ol
+              class="ml-6 md:ml-7 xl:ml-8 list-outside list list-[lower-roman]"
+            >
+              <li
+                class="list-item"
+              >
+                level-3
+              </li>
+              <li
+                class="list-item"
+              >
+                level-3
+                <ol
+                  class="ml-6 md:ml-7 xl:ml-8 list-outside list list-decimal"
+                >
+                  <li
+                    class="list-item"
+                  >
+                    level-4
+                  </li>
+                  <li
+                    class="list-item"
+                  >
+                    level-4
+                    <ol
+                      class="ml-6 md:ml-7 xl:ml-8 list-outside list list-[lower-alpha]"
+                    >
+                      <li
+                        class="list-item"
+                      >
+                        level-5
+                      </li>
+                    </ol>
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li
+        class="list-item"
+      >
+        <span
+          class="text-color-one"
+        >
+          ReactJS 
+        </span>
+        can be complex to set up and requires a lot of initial configuration, which can be time-consuming.
+      </li>
+      <li
+        class="list-item"
+      >
+        <span
+          class="text-color-one"
+        >
+          Because ReactJS
+        </span>
+         is a JavaScript library, it may not be the best choice for developers who prefer to work with other programming languages.
+      </li>
+      <li
+        class="list-item"
+      >
+        S
+        <span
+          class="text-color-one"
+        >
+          ince ReactJS is a client-side library, 
+        </span>
+        it may not be suitable for applications that require server-side rendering, as this can be challenging to implement.
+      </li>
+    </ol>
+  </div>
+</article>
+`;

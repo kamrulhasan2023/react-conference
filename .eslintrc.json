@@ -1,0 +1,18 @@
+{
+  "plugins": ["@typescript-eslint"],
+  "extends": ["prettier", "next/core-web-vitals"],
+  "rules": {
+    "import/no-anonymous-default-export": "off",
+    "react/display-name": "off",
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-unused-vars": "error"
+  },
+  "ignorePatterns": [
+    "node_modules",
+    ".next",
+    ".storybook",
+    ".swc",
+    "docs",
+    "storybook-static"
+  ]
+}

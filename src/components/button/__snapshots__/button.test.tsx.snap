@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders button correctly 1`] = `
+<button
+  class="inline-flex focus:outline-none focus-visible:outline-none focus:shadow-none focus-visible:shadow-none"
+  type="button"
+>
+  <span
+    aria-label="Button"
+    class="relative z-10 group/button overflow-hidden inline-flex items-center justify-center gap-3 cursor-pointer text-white hover:text-white leading-[1.1] button bg-primary-text-white hover-bg-success-text-white lg"
+  >
+    <span>
+      Button
+    </span>
+    <span
+      class="absolute z-[-1] inset-0 invisible opacity-0 group-hover/button:visible group-hover/button:opacity-100 button-bg"
+    />
+  </span>
+</button>
+`;
+
+exports[`renders redirect button correctly 1`] = `
+<a
+  class="inline-flex focus:outline-none focus-visible:outline-none focus:shadow-none focus-visible:shadow-none"
+  href="https://www.google.com/"
+  target="_blank"
+>
+  <span
+    aria-label="Redirect Button"
+    class="relative z-10 group/button overflow-hidden inline-flex items-center justify-center gap-3 cursor-pointer text-white hover:text-white leading-[1.1] button bg-primary-text-white hover-bg-success-text-white lg"
+  >
+    <span>
+      Redirect Button
+    </span>
+    <span
+      class="absolute z-[-1] inset-0 invisible opacity-0 group-hover/button:visible group-hover/button:opacity-100 button-bg"
+    />
+  </span>
+</a>
+`;

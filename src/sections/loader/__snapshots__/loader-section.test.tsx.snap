@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders loader section correctly 1`] = `
+<div
+  class="grid place-items-center bg-black min-h-screen w-full"
+  role="presentation"
+>
+  <div
+    class="loader"
+  />
+</div>
+`;

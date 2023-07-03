@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders double column cta section correctly 1`] = `
+<section
+  class="section-padding-primary bg-primary-thin"
+  role="presentation"
+>
+  <div
+    class="container"
+    role="presentation"
+  >
+    <div
+      class="flex flex-col items-center justify-between gap-6 md:flex-row"
+    >
+      <div
+        class="w-full md:w-[48%] lg:w-[45%] xl:w-[42%] 2xl:w-[40%]"
+      >
+        <div
+          class="section-heading black"
+          role="presentation"
+        >
+          <h2
+            class="text-2xl font-medium  md:text-4xl md:font-bold title"
+          >
+            We’d love to help start your headless journey or  to help optimize your existing solution.
+          </h2>
+        </div>
+      </div>
+      <div
+        class="w-full md:w-1/2"
+      >
+        <article
+          class="colored-bg normal-block-font-size-normal"
+        >
+          <div
+            class="space-y-4 main-wrapper"
+          >
+            <p
+              class="normal"
+              id="0ffdc2e0f0b8"
+            >
+              <a
+                class="underline text-secondary"
+                href="https://www.google.com"
+                target="_blank"
+              >
+                Headless website
+              </a>
+               for an award winning digital marketing agency.
+            </p>
+            <br />
+            <p
+              class="normal"
+              id="c0b3d76ed804"
+            >
+              <strong>
+                Lorem ipsum
+              </strong>
+               dolor 
+              <em>
+                sit amet consectetur
+              </em>
+              . Vitae cursus ultricies interdu ridiculus. Nullam nuwel craegestas risus 
+              <span
+                style="text-decoration: underline;"
+              >
+                diam lorem nascetur
+              </span>
+              . Lorem ipsum dolor sit amet consectetur. Vitae cursus ultricies interdu ridiculus. Nullam nuwel craegestas risus 
+              <strong>
+                diam lorem nascetu ullam nuwel
+              </strong>
+            </p>
+          </div>
+        </article>
+        <div
+          class="mt-8 md:mt-9 xl:mt-11 2xl:mt-12"
+        >
+          <a
+            class="relative z-10 overflow-hidden inline-flex items-center justify-center underline transition-colors cta-button primary"
+            href="https://example.com/"
+            target="_blank"
+          >
+            Book a project discovery call
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

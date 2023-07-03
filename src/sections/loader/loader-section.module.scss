@@ -1,0 +1,39 @@
+// resuable design
+.after-before {
+  @apply absolute;
+  width: var(--thickness);
+  height: var(--thickness);
+  border-radius: var(--border-radius);
+  animation-duration: var(--animation-duration);
+  background: var(--spin-bar-color);
+  top: var(--align-y);
+}
+
+.loader {
+  // local variable
+  --animation-duration: 3s;
+  --border-radius: 100vw;
+  --align-x: 5px;
+  --align-y: calc(var(--align-x) / 2);
+  --thickness: 16px;
+  --circle-size: 150px;
+  --circle-color: theme(colors.white);
+  --spin-bar-color: theme(colors.primary.DEFAULT);
+
+  @apply relative animate-spin  border-solid border-white border-t-primary before:content-[''] after:content-[''];
+  width: var(--circle-size);
+  height: var(--circle-size);
+  border-radius: var(--border-radius);
+  border-width: var(--thickness);
+  animation-duration: var(--animation-duration);
+
+  &::after,
+  &::before {
+    @extend .after-before;
+    left: var(--align-x);
+  }
+  &::after {
+    left: unset;
+    right: var(--align-x);
+  }
+}

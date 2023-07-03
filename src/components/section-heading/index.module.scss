@@ -1,0 +1,31 @@
+.section-heading {
+  .title {
+    @apply text-primary;
+  }
+
+  // colorSchemes
+  &.primary {
+    .title {
+      @apply text-primary;
+    }
+  }
+  &.success {
+    .title {
+      @apply text-success;
+    }
+  }
+  &.white {
+    @apply text-white;
+    .title,
+    .description {
+      @apply text-white;
+    }
+  }
+  &.black {
+    @apply text-black;
+    .title,
+    .description {
+      @apply text-black;
+    }
+  }
+}

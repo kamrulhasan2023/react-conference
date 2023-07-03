@@ -1,0 +1,80 @@
+/**
+* Note:
+* By default, portable text paragraph (Normal Block) is styled using
+* the paragraph style from global css
+*
+* The style can be overwritten using the following class: normal-block-font-size-<size>.
+* You can find the currently used implmentation of this class below.
+*/
+
+@import '@mixins';
+
+// block - heading
+.heading-one {
+  @include fluidFontSize(32, 64);
+}
+
+.heading-two {
+  @include fluidFontSize(32, 48);
+}
+
+.heading-three {
+  @include fluidFontSize(28, 32);
+}
+
+// block - marks
+.text-color-one {
+  @apply text-primary;
+}
+
+.text-color-two {
+  @apply text-primary-thin;
+}
+
+.text-color-three {
+  @apply text-primary-light;
+}
+
+// block - custom blocks
+.blockquote {
+  @apply bg-primary-thin text-black;
+  .normal {
+    @apply text-black;
+  }
+}
+
+// block - list
+.list {
+  @apply mt-2 text-black md:mt-3 lg:mt-4;
+  .list-item {
+    @apply mb-2 md:mb-3 lg:mb-4;
+  }
+}
+
+// when background is different color
+.colored-bg {
+  .normal,
+  .list,
+  .normal,
+  .text-color-one,
+  .text-color-two,
+  .text-color-three {
+    @apply text-black;
+  }
+
+  // blockquote
+  .blockquote {
+    @apply bg-black text-primary-thin;
+    .normal {
+      @apply text-primary-thin;
+    }
+  }
+}
+
+// normal block font size - here default normal.
+.normal-block-font-size-medium {
+  .normal {
+    @include fluidFontSize(20, 48);
+    @apply xl:font-medium;
+  }
+}

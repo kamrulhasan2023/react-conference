@@ -1,0 +1,86 @@
+/*=================================================
+  Text, Background & Hover Colors, Sizes, Icon Animation.
+===================================================*/
+.button {
+  transition: var(--transition);
+  .button-bg {
+    transition: var(--transition);
+  }
+
+  // Fill buttons
+
+  // primary colors
+  &.bg-primary-text-white {
+    @apply bg-primary text-white;
+  }
+  &.hover-bg-primary-text-white {
+    @apply hover:text-white;
+    .button-bg {
+      @apply bg-primary;
+    }
+  }
+
+  // success colors
+  &.bg-success-text-white {
+    @apply bg-success text-white;
+  }
+  &.hover-bg-success-text-white {
+    @apply hover:text-white;
+    .button-bg {
+      @apply bg-success;
+    }
+  }
+
+  // black colors
+  &.bg-black-text-white {
+    @apply bg-black text-white;
+  }
+  &.hover-bg-black-text-white {
+    @apply hover:text-white;
+    .button-bg {
+      @apply bg-black;
+    }
+  }
+
+  // white colors
+  &.bg-white-text-black {
+    @apply bg-white text-black;
+  }
+  &.hover-bg-white-text-black {
+    @apply hover:text-black;
+    .button-bg {
+      @apply bg-white;
+    }
+  }
+
+  // Outline buttons
+  &.outline {
+    @apply border border-primary text-primary;
+    &.bg-transparent-text-primary {
+      @apply border-primary text-primary;
+    }
+    &.hover-bg-transparent-text-primary {
+      @apply hover:border-primary hover:bg-transparent hover:text-primary;
+    }
+    &.bg-transparent-text-success {
+      @apply border-success text-success;
+    }
+    &.hover-bg-transparent-text-success {
+      @apply hover:border-success hover:bg-transparent hover:text-success;
+    }
+  }
+
+  //  Button Sizes
+  &.lg {
+    @apply min-h-[3rem] rounded-md  p-[.75rem_1.5rem] text-base/[1.1] font-normal md:min-h-[3.5rem] md:p-[.875rem_2rem]  md:font-medium;
+  }
+  &.md {
+    @apply min-h-[2.5rem] rounded-md  p-[.75rem_1rem] text-sm/[1.1] font-normal md:min-h-[3rem] md:p-[.875rem_2rem] md:text-base/[1.1];
+  }
+  &.sm {
+    @apply min-h-[3rem] rounded-[.3125rem] p-[.75rem_1.5rem] text-base/[1.1] font-normal;
+  }
+  &.xs {
+    @apply min-h-[2.5rem] gap-2 rounded-[.3125rem] p-[.75rem_1rem]  text-sm/[1.1] font-normal;
+  }
+}

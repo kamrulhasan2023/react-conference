@@ -1,0 +1,49 @@
+/// Computes fluid font-size.
+///
+/// @param {number} $minFontSize
+///   Minimum font-size
+/// @param {number} $maxFontSize
+///   Maximum font-size
+/// @param {number} $minViewport
+///   Minimum view port
+/// @param {number} $maxViewport
+///   Maximum view port
+@mixin fluidFontSize(
+  $minFontSize,
+  $maxFontSize,
+  $minViewport: 768,
+  $maxViewport: 1920
+) {
+  $baseSize: 16;
+  $fontSizeRange: $maxFontSize - $minFontSize;
+  $viewportRange: $maxViewport - $minViewport;
+  $slope: $fontSizeRange / $viewportRange;
+  $intercept: $minFontSize - $slope * $minViewport;
+
+  font-size: #{$minFontSize/$baseSize}rem;
+  font-size: unquote(
+    'clamp(#{$minFontSize/$baseSize}rem, #{$slope*100}vw + #{$intercept/$baseSize}rem, #{$maxFontSize/$baseSize}rem)'
+  );
+}
+
+/// Computes fluid size.
+///
+/// @param {number} $minSize
+///   Minimum - size
+/// @param {number} $maxSize
+///   Maximum - size
+/// @param {number} $minViewport
+///   Minimum view port
+/// @param {number} $maxViewport
+///   Maximum view port
+@function fluidSize($minSize, $maxSize, $minViewport: 768, $maxViewport: 1920) {
+  $baseSize: 16;
+  $SizeRange: $maxSize - $minSize;
+  $viewportRange: $maxViewport - $minViewport;
+  $slope: $SizeRange / $viewportRange;
+  $intercept: $minSize - $slope * $minViewport;
+
+  @return unquote(
+    'clamp(#{$minSize/$baseSize}rem, #{$slope*100}vw + #{$intercept/$baseSize}rem, #{$maxSize/$baseSize}rem)'
+  );
+}

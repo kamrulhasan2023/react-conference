@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --transition: all 0.35s ease-in-out;
+
+    /* 
+     This implementation of colors allow us to control the color opacity
+     @see https://tailwindcss.com/docs/customizing-colors
+     @see https://tailwindcss.com/docs/text-color#changing-the-opacity
+     Please check the tailwind config if you modify this segment. 
+     */
+    --color-primary: 12 94 232;
+    --color-primary-light: 49 122 245;
+    --color-primary-thin: 98 145 224;
+
+    --color-success: 0 196 140;
+    --color-success-light: 230 250 244;
+    --color-success-thin: 244 255 252;
+
+    --color-danger: 255 85 85;
+    --color-danger-light: 255 238 238;
+    --color-danger-thin: 255 247 247;
+
+    --color-info: 24 144 255;
+    --color-info-light: 145 213 255;
+    --color-info-thin: 235 247 255;
+
+    --color-black: 0 0 0;
+    --color-black-light: 61 67 79;
+
+    --color-gray: 189 189 189;
+    --color-gray-light: 221 221 221;
+    --color-gray-thin: 250 250 250;
+
+    --color-white: 255 255 255;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+   font-family: 'Inter', sans-serif;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  html {
+    /* NOTE: If you have fixed navbar, please set scroll padding as per your navbar height */
+    @apply scroll-p-[6rem] scroll-smooth lg:scroll-p-[9rem];
+  }
+
+  body,
+  p {
+    @apply text-base text-black;
+  }
+}
+
+/**
+* Used in all section components
+*/
+@layer components {
+  .section-padding-primary {
+    @apply py-[3.75rem] md:py-[6.25rem] xl:py-[7.5rem];
+  }
+}
