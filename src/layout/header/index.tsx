@@ -4,7 +4,7 @@ import CustomLink from '@components/custom-link';
 import { HiBars3 } from 'react-icons/hi2';
 export default function Header({ logo, menuItems }: IHeader) {
   return (
-    <header role="presentation" className="fixed w-full bg-transparent">
+    <header role="presentation" className="fixed w-full bg-transparent z-50">
       <Container>
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
           {/* <h1 className="text-4xl text-white">

@@ -9,6 +9,9 @@ import circle from './assets/img/circle.png';
 import light from './assets/img/light.png';
 import path from './assets/img/path.png';
 
+// style
+import styles from "./hero.module.scss";
+
 const Hero = ({ title, description, btnText }: IRCHero) => {
   return (
     <>
@@ -72,6 +75,19 @@ const Hero = ({ title, description, btnText }: IRCHero) => {
               />
             </div>
           </div>
+        </div>
+        {/* shape */}
+        <div className={`${styles['rc-hero-shape-wrapper']}`} >
+          <div className={`${styles['rc-hero-top-left-bg']} opacity-90`}></div>
+        </div>
+        <div className={`${styles['rc-hero-shape-wrapper']}`} >
+          <div className={`${styles['rc-hero-top-right-bg']} opacity-90`}></div>
+        </div>
+        <div className={`${styles['rc-hero-shape-wrapper']}`} >
+          <div className="rc-hero-bottom-left-bg"></div>
+        </div>
+        <div className={`${styles['rc-hero-shape-wrapper']}`} >
+          <div className={`${styles['rc-hero-bottom-right-bg']}`}></div>
         </div>
       </div>
     </>
