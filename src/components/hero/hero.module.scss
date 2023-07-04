@@ -11,31 +11,31 @@
     mask-image: url("./assets/img/vector-1.svg");
     -webkit-mask-image: url("./assets/img/vector-1.svg");
     background:#7C3EFF;
-    width:383px;
-    height:383px;
+    width:100%;
+    height:100%;
     @extend .maskCommonCss;
 }
 .rc-hero-top-right-bg{
     mask-image: url("./assets/img/vector-2.svg");
     -webkit-mask-image: url("./assets/img/vector-2.svg");
     background:#BE229C;
-    width:412px;
-    height:412px;
+    width:100%;
+    height:100%;
     @extend .maskCommonCss;
 }
 .rc-hero-bottom-left-bg{
     mask-image: url("./assets/img/vector-3.svg");
     -webkit-mask-image: url("./assets/img/vector-3.svg");
     background:#22B5BE;
-    width:242px;
-    height:242px;
+    width:100%;
+    height:100%;
     @extend .maskCommonCss;
 }
 .rc-hero-bottom-right-bg{
     mask-image: url("./assets/img/vector-4.svg");
     -webkit-mask-image: url("./assets/img/vector-4.svg");
     background:#FFC93E;
-    width:258px;
-    height:258px;
+    width:100%;
+    height:100%;
     @extend .maskCommonCss;
 }

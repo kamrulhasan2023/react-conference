@@ -77,7 +77,7 @@ const Hero = ({ title, description, btnText }: IRCHero) => {
           </div>
         </div>
         {/* shape */}
-        <div className={`${styles['rc-hero-shape-wrapper']}  left-0 top-0`} >
+        <div className={`${styles['rc-hero-shape-wrapper']}  left-0 top-0 w-[700px] h-[700px]`} >
           <div className={`${styles['rc-hero-top-left-bg']} opacity-90`}></div>
         </div>
         <div className={`${styles['rc-hero-shape-wrapper']} right-0 top-0`} >
