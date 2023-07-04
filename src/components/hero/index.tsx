@@ -9,7 +9,7 @@ import rightImage from './assets/img/right.jpg';
 const Hero = ({ title, description, btnText }: IRCHero) => {
   return (
     <>
-      <div className="rc-hero ">
+      <div className="rc-hero">
         <div className="mx-auto max-w-[1440px] 2xl:max-w-[1552px]">
           <div className="rc-hero-content flex">
             <div className="rc-hero-left w-[60%]">
@@ -26,12 +26,12 @@ const Hero = ({ title, description, btnText }: IRCHero) => {
                   alt="left-image"
                 />
                 <div>
-                  <p className="text-[18px]">
+                  <p className="mb-[32px] text-[18px] opacity-80 2xl:mb-[80px]">
                     Lorem uis diam turpis quam id fermentum.In quis diam turpis
                     quam id fermentum..id fermentum.In quis diam turpis quam id
                     fermentum.
                   </p>
-                  <button className="flex items-center justify-center rounded-[30px] bg-[#FFC93E] px-[24px] py-[16px]">
+                  <button className="flex w-full max-w-[293px] items-center justify-center rounded-[30px] bg-[#FFC93E] px-[24px] py-[16px] font-medium">
                     <span className="mr-2 text-[18px] text-[#0A142F]">
                       Buy Tickets
                     </span>
