@@ -14,7 +14,7 @@
 // import { generateMetaObject } from 'src/utils/generate-meta-data';
 // // import { draftMode } from 'next/headers';
 
-import Hero from "@components/hero";
+import Hero from '@components/hero';
 
 // // const getPageData = cache(async () => {
 // //   let data;
@@ -92,13 +92,7 @@ import Hero from "@components/hero";
 export default async function Event() {
   return (
     <>
-      <div className="section-padding-primary">
-        <Hero
-          title = ""
-          description=""
-          btnText=""
-        />
-      </div>
+      <Hero title="" description="" btnText="" />
     </>
   );
 }
