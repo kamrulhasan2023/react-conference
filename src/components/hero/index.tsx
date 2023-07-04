@@ -77,16 +77,16 @@ const Hero = ({ title, description, btnText }: IRCHero) => {
           </div>
         </div>
         {/* shape */}
-        <div className={`${styles['rc-hero-shape-wrapper']}`} >
+        <div className={`${styles['rc-hero-shape-wrapper']}  left-0 top-0`} >
           <div className={`${styles['rc-hero-top-left-bg']} opacity-90`}></div>
         </div>
-        <div className={`${styles['rc-hero-shape-wrapper']}`} >
+        <div className={`${styles['rc-hero-shape-wrapper']} right-0 top-0`} >
           <div className={`${styles['rc-hero-top-right-bg']} opacity-90`}></div>
         </div>
-        <div className={`${styles['rc-hero-shape-wrapper']}`} >
-          <div className="rc-hero-bottom-left-bg"></div>
+        <div className={`${styles['rc-hero-shape-wrapper']} left-0 bottom-0`} >
+          <div className={`${styles['rc-hero-bottom-left-bg']}`}></div>
         </div>
-        <div className={`${styles['rc-hero-shape-wrapper']}`} >
+        <div className={`${styles['rc-hero-shape-wrapper']} right-0 bottom-0`} >
           <div className={`${styles['rc-hero-bottom-right-bg']}`}></div>
         </div>
       </div>

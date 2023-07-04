@@ -1,8 +1,10 @@
-.rc-hero-shape-wrapper{
-    position:absolute;
+.maskCommonCss {
     mask-size: contain;
     mask-repeat: no-repeat;
     mask-position: center;
+}
+.rc-hero-shape-wrapper{
+    position:absolute;
     z-index:-1;
 }
 .rc-hero-top-left-bg{
@@ -11,8 +13,7 @@
     background:#7C3EFF;
     width:383px;
     height:383px;
-    left:0;
-    top:0;
+    @extend .maskCommonCss;
 }
 .rc-hero-top-right-bg{
     mask-image: url("./assets/img/vector-2.svg");
@@ -20,11 +21,15 @@
     background:#BE229C;
     width:412px;
     height:412px;
-    right:0;
-    top:0;
+    @extend .maskCommonCss;
 }
 .rc-hero-bottom-left-bg{
-
+    mask-image: url("./assets/img/vector-3.svg");
+    -webkit-mask-image: url("./assets/img/vector-3.svg");
+    background:#22B5BE;
+    width:242px;
+    height:242px;
+    @extend .maskCommonCss;
 }
 .rc-hero-bottom-right-bg{
     mask-image: url("./assets/img/vector-4.svg");
@@ -32,7 +37,5 @@
     background:#FFC93E;
     width:258px;
     height:258px;
-    right:0;
-    bottom:0;
-    
+    @extend .maskCommonCss;
 }
