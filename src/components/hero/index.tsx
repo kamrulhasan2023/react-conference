@@ -41,6 +41,7 @@ const Hero = ({ title, description, btnText }: IRCHero) => {
                     width={330}
                     height={420}
                     alt="left-image"
+                    className=""
                   />
                   <Image
                     src={circle}
@@ -77,7 +78,7 @@ const Hero = ({ title, description, btnText }: IRCHero) => {
                   width={131}
                   height={131}
                   alt="left-image"
-                  className="lg:w-full lg:h-full w-[94px] h-[94px]"
+                  className=""
                 />
                </div>
             </div>
