@@ -4,10 +4,10 @@ import Image from 'next/image';
 import { BsArrowUpRight } from 'react-icons/bs';
 // local images
 import leftImage from './assets/img/left.jpg';
-import rightImage from './assets/img/right.jpg';
+import rightImage from './assets/img/right.png';
 import circle from './assets/img/circle.png';
 import light from './assets/img/light.png';
-import path from './assets/img/path.png';
+import star from "./assets/img/star.png";
 
 // style
 import styles from "./hero.module.scss";
@@ -15,9 +15,9 @@ import styles from "./hero.module.scss";
 const Hero = ({ title, description, btnText }: IRCHero) => {
   return (
     <>
-      <div className="rc-hero relative pb-[100px] pt-[170px]">
+      <div className={`rc-hero relative pb-[100px] pt-[170px] overflow-hidden ${styles['rc-path']}`}>
         <div className="mx-auto max-w-[1552px]">
-          <div className="rc-hero-content flex">
+          <div className="rc-hero-content flex ">
             <div className="rc-hero-left w-[60%]">
               <div className="rc-hero-left-top rtl mb-[30px]" dir="rtl">
                 <div className="relative">
@@ -65,7 +65,7 @@ const Hero = ({ title, description, btnText }: IRCHero) => {
                 </div>
               </div>
             </div>
-            <div className="rc-hero-right w-[40%]">
+            <div className="rc-hero-right w-[40%] pl-[77px] relative">
               <Image
                 src={rightImage}
                 width={623}
@@ -73,20 +73,28 @@ const Hero = ({ title, description, btnText }: IRCHero) => {
                 alt="left-image"
                 className="mt-[250px]"
               />
+               <div className="absolute left-[3%] bottom-[-8%]">
+                <Image
+                  src={star}
+                  width={131}
+                  height={131}
+                  alt="left-image"
+                />
+               </div>
             </div>
           </div>
         </div>
         {/* shape */}
         <div className={`${styles['rc-hero-shape-wrapper']}  left-0 top-0 w-[700px] h-[700px]`} >
-          <div className={`${styles['rc-hero-top-left-bg']} opacity-90`}></div>
+          <div className={`${styles['rc-hero-top-left-bg']} opacity-70`}></div>
         </div>
-        <div className={`${styles['rc-hero-shape-wrapper']} right-0 top-0`} >
-          <div className={`${styles['rc-hero-top-right-bg']} opacity-90`}></div>
+        <div className={`${styles['rc-hero-shape-wrapper']} right-0 top-0 w-[700px] h-[700px]`} >
+          <div className={`${styles['rc-hero-top-right-bg']} opacity-70`}></div>
         </div>
-        <div className={`${styles['rc-hero-shape-wrapper']} left-0 bottom-0`} >
+        <div className={`${styles['rc-hero-shape-wrapper']} left-[100px] bottom-[-50px] w-[700px] h-[700px]`} >
           <div className={`${styles['rc-hero-bottom-left-bg']}`}></div>
         </div>
-        <div className={`${styles['rc-hero-shape-wrapper']} right-0 bottom-0`} >
+        <div className={`${styles['rc-hero-shape-wrapper']} right-[-100px] bottom-[-150px]  w-[700px] h-[800px]`} >
           <div className={`${styles['rc-hero-bottom-right-bg']}`}></div>
         </div>
       </div>

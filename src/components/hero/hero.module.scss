@@ -1,3 +1,12 @@
+.rc-path{
+    background-image:url("./assets/img/path.png");
+    background-position: right 16.5% top 10px ;
+    background-size:auto;
+    background-repeat:no-repeat;
+    background-origin: content-box;
+    background-clip: border-box;
+}
+// mask css
 .maskCommonCss {
     mask-size: contain;
     mask-repeat: no-repeat;
