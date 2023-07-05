@@ -17,11 +17,11 @@ const Hero = ({ title, description, btnText }: IRCHero) => {
     <>
       <div className={`rc-hero relative pb-[100px] pt-[170px] overflow-hidden ${styles['rc-path']}`}>
         <div className="mx-auto max-w-[1552px]">
-          <div className="rc-hero-content flex">
-            <div className="rc-hero-left w-[60%]">
+          <div className="rc-hero-content flex flex-col lg:flex-row px-[30px] lg:px-0">
+            <div className="rc-hero-left lg:w-[60%] w-full">
               <div className="rc-hero-left-top rtl mb-[30px]" dir="rtl">
                 <div className="relative">
-                  <div className="absolute top-[-40px] xl:left-[50%] 2xl:left-[52%]">
+                  <div className={`absolute top-[-40px] xl:left-[50%] 2xl:left-[52%] ${styles['light']}`}>
                     <Image
                       src={light}
                       width={85}
@@ -29,13 +29,13 @@ const Hero = ({ title, description, btnText }: IRCHero) => {
                       alt="left-heading-top"
                     />
                   </div>
-                  <h1 className="text-[48px] font-bold leading-[121%] text-[#111D5E] lg:text-[90px] 2xl:text-[140px]">
+                  <h1 className="text-[48px] font-bold leading-[121%] text-[#111D5E] lg:text-[90px] xl:text-[140px]">
                     {title}
                   </h1>
                 </div>
               </div>
-              <div className="rc-hero-left-bottom flex justify-between">
-                <div className="relative w-[45%]">
+              <div className="rc-hero-left-bottom flex justify-between lg:flex-row flex-col-reverse">
+                <div className="relative lg:w-[45%] w-full">
                   <Image
                     src={leftImage}
                     width={330}
@@ -50,11 +50,11 @@ const Hero = ({ title, description, btnText }: IRCHero) => {
                     className="absolute bottom-[-85px] right-0 z-[-1]"
                   />
                 </div>
-                <div className="w-[55%]">
-                  <p className="mb-[32px] mt-4 text-[18px] opacity-80 2xl:mb-[80px]">
+                <div className="lg:w-[55%] w-full">
+                  <p className="mb-[32px] mt-4 lg:text-[18px] opacity-80 2xl:mb-[80px]">
                     {description}
                   </p>
-                  <button className="flex w-full max-w-[293px] items-center justify-center rounded-[30px] bg-[#FFC93E] px-[24px] py-[16px] font-medium">
+                  <button className="flex w-full max-w-[293px] items-center justify-center rounded-[30px] bg-[#FFC93E] px-[24px] py-[16px] font-medium lg:mb-0 mb-8">
                     <span className="mr-2 text-[18px] text-[#0A142F]">
                       {btnText}
                     </span>
@@ -63,7 +63,7 @@ const Hero = ({ title, description, btnText }: IRCHero) => {
                 </div>
               </div>
             </div>
-            <div className="rc-hero-right w-[40%] pl-[77px] relative">
+            <div className="rc-hero-right lg:w-[40%] w-full lg:pl-[77px] relative">
               <Image
                 src={rightImage}
                 width={623}
@@ -71,12 +71,13 @@ const Hero = ({ title, description, btnText }: IRCHero) => {
                 alt="left-image"
                 className="mt-[250px]"
               />
-               <div className="absolute left-[3%] bottom-[-8%]">
+               <div className="absolute lg:left-[3%] lg:bottom-[-8%] right-[-12px] bottom-[-10%]">
                 <Image
                   src={star}
                   width={131}
                   height={131}
                   alt="left-image"
+                  className="lg:w-full lg:h-full w-[94px] h-[94px]"
                 />
                </div>
             </div>

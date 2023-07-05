@@ -63,3 +63,40 @@
     height:100%;
     @extend .maskCommonCss;
 }
+@media all and (max-width:1550px) {
+    .light{
+        left:50%;
+    }
+}
+@media all and (max-width:1440px) {
+    .light{
+        left:45%;
+    }
+}
+
+@media all and (max-width:1366px) {
+    .light{
+        left:43%;
+    }
+}
+@media all and (max-width:1280px) {
+    .light{
+        left:57%;
+        top:-45px;
+    }
+}
+@media all and (max-width:1200px) {
+    .light{
+        left:50%;
+        top:-45px;
+    }
+}
+@media all and (max-width:1023px) {
+    .light{
+        left:20%;
+        top:-50px;
+    }
+}
+@media all and (max-width:767px) {
+   
+}
