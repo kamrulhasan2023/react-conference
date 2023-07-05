@@ -6,6 +6,21 @@
     background-origin: content-box;
     background-clip: border-box;
 }
+// .rc-hero-title{
+//    position:relative;
+// }
+// .rc-hero-title:before{
+//     content: "";
+//     position:absolute;
+//     width:85px;
+//     height:82px;
+//     background-image:url("./assets/img/light.png");
+//     background-size:auto;
+//     background-repeat:no-repeat;
+//     z-index:999;
+//     right:38%;
+//     top:-8%;
+// }
 // mask css
 .maskCommonCss {
     mask-size: contain;

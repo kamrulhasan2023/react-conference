@@ -15,6 +15,7 @@
 // // import { draftMode } from 'next/headers';
 
 import Hero from '@components/hero';
+import {heroProps} from  "@components/hero/mock-data";
 
 // // const getPageData = cache(async () => {
 // //   let data;
@@ -92,7 +93,7 @@ import Hero from '@components/hero';
 export default async function Event() {
   return (
     <>
-      <Hero title="" description="" btnText="" />
+      <Hero  {...heroProps} />
     </>
   );
 }
