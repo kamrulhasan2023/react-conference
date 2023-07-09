@@ -66,6 +66,9 @@
 .rc-hero-left-bottom{
 
 }
+.to-bottom-text{
+    writing-mode: vertical-rl;
+}
 @media all and (max-width:1550px) {
     .light{
         left:50%;
@@ -73,18 +76,18 @@
 }
 @media all and (max-width:1440px) {
     .light{
-        left:45%;
+        left:43%;
     }
 }
 
 @media all and (max-width:1366px) {
     .light{
-        left:43%;
+        left:45%;
     }
 }
 @media all and (max-width:1280px) {
     .light{
-        left:57%;
+        left:40%;
         top:-45px;
     }
 }
@@ -94,15 +97,33 @@
         top:-45px;
     }
 }
-@media all and (max-width:1023px) {
+@media all and (max-width:1024px) {
     .light{
-        left:20%;
+        left:37%;
         top:-50px;
     }
 }
 @media all and (max-width:767px) {
+    .rc-path{
+        background-image:url("./assets/img/mobile-path.png");
+        background-position: right 2% top -5px ;
+    }
     .light{
-        left:30%;
+        left:25%;
         top:-50px;
+    }
+    .star{
+        width:94px;
+        height:94px;
+    }
+   .left-image > img{
+        width:167px;
+        height:200px;
+    }
+    img.left-circle{
+        width:100px;
+        height:100px;
+        bottom:50px;
+        right:-85px;
     }
 }

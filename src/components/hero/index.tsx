@@ -2,6 +2,7 @@ import React from 'react';
 import { IRCHero } from './interface';
 import Image from 'next/image';
 import { BsArrowUpRight } from 'react-icons/bs';
+import { BiSolidDownArrow } from "react-icons/bi";
 // local images
 import leftImage from './assets/img/left.jpg';
 import rightImage from './assets/img/right.png';
@@ -15,7 +16,7 @@ import styles from "./hero.module.scss";
 const Hero = ({ title, description, btnText }: IRCHero) => {
   return (
     <>
-      <div className={`rc-hero relative pb-[100px] pt-[170px] overflow-hidden ${styles['rc-path']}`}>
+      <div className={`rc-hero relative pb-[100px] pt-[170px] overflow-hidden ${styles['rc-path']} md:px-12 px-4`}>
         <div className="mx-auto max-w-[1552px]">
           <div className="rc-hero-content flex flex-col lg:flex-row px-[30px] lg:px-0">
             <div className="rc-hero-left lg:w-[60%] w-full">
@@ -29,13 +30,13 @@ const Hero = ({ title, description, btnText }: IRCHero) => {
                       alt="left-heading-top"
                     />
                   </div>
-                  <h1 className="text-[48px] font-bold leading-[121%] text-[#111D5E] lg:text-[90px] xl:text-[140px]">
+                  <h1 className="text-[48px] font-bold leading-[121%] text-[#111D5E] lg:text-[90px] xl:text-[120px] 2xl:text-[140px]">
                     {title}
                   </h1>
                 </div>
               </div>
               <div className={`rc-hero-left-bottom flex justify-between lg:flex-row flex-col-reverse`}>
-                <div className="relative lg:w-[45%] w-full left-image">
+                <div className={`relative lg:w-[45%] w-full ${styles['left-image']}`}>
                   <Image
                     src={leftImage}
                     width={330}
@@ -47,10 +48,10 @@ const Hero = ({ title, description, btnText }: IRCHero) => {
                     width={196}
                     height={190}
                     alt="left-circle"
-                    className="absolute bottom-[-85px] right-0 z-[-1]"
+                    className={`absolute bottom-[-85px] right-0 z-[-1] ${styles['left-circle']}`}
                   />
                 </div>
-                <div className="lg:w-[55%] w-full">
+                <div className="lg:w-[55%] w-full xl:px-0 md:pl-6 pl-1">
                   <p className="mb-[32px] mt-4 lg:text-[18px] opacity-80 2xl:mb-[80px]">
                     {description}
                   </p>
@@ -69,15 +70,15 @@ const Hero = ({ title, description, btnText }: IRCHero) => {
                 width={623}
                 height={648}
                 alt="left-image"
-                className="mt-[250px]"
+                className="lg:mt-[250px] mt-12 lg:w-auto w-full"
               />
-               <div className="absolute lg:left-[3%] lg:bottom-[-8%] right-[-12px] bottom-[-10%]">
+               <div className="absolute md:left-[3%] md:bottom-[-8%] right-[-12px] bottom-[-15%]">
                 <Image
                   src={star}
                   width={131}
                   height={131}
                   alt="left-image"
-                  className=""
+                  className={`${styles['star']}`}
                 />
                </div>
             </div>
@@ -95,6 +96,11 @@ const Hero = ({ title, description, btnText }: IRCHero) => {
         </div>
         <div className={`${styles['rc-hero-shape-wrapper']} right-[-100px] bottom-[-150px]  w-[700px] h-[800px]`} >
           <div className={`${styles['rc-hero-bottom-right-bg']}`}></div>
+        </div>
+        {/* arrow to bottom */}
+        <div className="absolute left-[50%] bottom-[50px] lg:flex flex-col justify-center items-center gap-1 hidden">
+          <span className={`${styles['to-bottom-text']}`}>Scroll Down</span>
+          <BiSolidDownArrow></BiSolidDownArrow>
         </div>
       </div>
     </>
