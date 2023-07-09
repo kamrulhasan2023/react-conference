@@ -1,7 +1,8 @@
 export interface IConference{
+    id ? : string | number,
     title: string;
     description:string;
     startDate: string;
-    isAlter: boolean;
+    count:number,
     isLastItem? : boolean;
 }

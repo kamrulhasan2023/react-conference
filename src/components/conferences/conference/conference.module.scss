@@ -1,0 +1,21 @@
+.conference:nth-child(even) {
+    flex-direction:row-reverse;
+}
+.conference-content{
+    background-color:#F9FAFB;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.06);
+    padding:24px 22px 24px 16px;
+    border-top:4px solid #CDCDCD;
+}
+.divider-icon{
+    width:48px;
+    height:48px;
+    border:1px solid #FFC93E;
+    border-radius:50%;
+    font-size:24px;
+    color:#FFC93E;
+    background:#FFF9EB;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
