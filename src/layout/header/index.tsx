@@ -3,11 +3,23 @@ import Container from '@components/container';
 import { IHeader } from './interface';
 import CustomLink from '@components/custom-link';
 import { HiBars3 } from 'react-icons/hi2';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from "./header.module.scss";
 
 export default function Header({ logo, menuItems }: IHeader) {
-  const [showMobileMenu, setShowMobileMenu] = useState(false)
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [navColor, setnavBgColor] = useState("transparent");
+   // menu background color handler
+  const listenScrollEvent = () => {
+    window.scrollY > 10 ? setnavBgColor("#FFFFFF") : setnavBgColor("transparent");
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+    return () => {
+      window.removeEventListener("scroll", listenScrollEvent);
+    };
+  }, []);
+
    // toggle : show hide mobile menu 
    const handleShowMobileMenu = (e:React.MouseEvent) => {
     e.preventDefault();
@@ -15,7 +27,7 @@ export default function Header({ logo, menuItems }: IHeader) {
   }
 
   return (
-    <header role="presentation" className="fixed w-full bg-transparent z-50">
+    <header role="presentation" className="fixed w-full z-50" style={{backgroundColor:  navColor}}>
       <Container>
         <div className="flex lg:items-center lg:justify-between py-9 lg:py-8">
           {/* <h1 className="text-4xl text-white">

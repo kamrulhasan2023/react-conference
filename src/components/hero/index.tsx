@@ -34,14 +34,13 @@ const Hero = ({ title, description, btnText }: IRCHero) => {
                   </h1>
                 </div>
               </div>
-              <div className="rc-hero-left-bottom flex justify-between lg:flex-row flex-col-reverse">
-                <div className="relative lg:w-[45%] w-full">
+              <div className={`rc-hero-left-bottom flex justify-between lg:flex-row flex-col-reverse`}>
+                <div className="relative lg:w-[45%] w-full left-image">
                   <Image
                     src={leftImage}
                     width={330}
                     height={420}
                     alt="left-image"
-                    className=""
                   />
                   <Image
                     src={circle}
