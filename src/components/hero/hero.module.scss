@@ -1,0 +1,129 @@
+.rc-path{
+    background-image:url("./assets/img/path.png");
+    background-position: right 16.5% top 10px ;
+    background-size:auto;
+    background-repeat:no-repeat;
+    background-origin: content-box;
+    background-clip: border-box;
+}
+// .rc-hero-title{
+//    position:relative;
+// }
+// .rc-hero-title:before{
+//     content: "";
+//     position:absolute;
+//     width:85px;
+//     height:82px;
+//     background-image:url("./assets/img/light.png");
+//     background-size:auto;
+//     background-repeat:no-repeat;
+//     z-index:999;
+//     right:38%;
+//     top:-8%;
+// }
+// mask css
+.maskCommonCss {
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
+.rc-hero-shape-wrapper{
+    position:absolute;
+    z-index:-1;
+}
+.rc-hero-top-left-bg{
+    mask-image: url("./assets/img/vector-1.svg");
+    -webkit-mask-image: url("./assets/img/vector-1.svg");
+    background:#7C3EFF;
+    width:100%;
+    height:100%;
+    @extend .maskCommonCss;
+}
+.rc-hero-top-right-bg{
+    mask-image: url("./assets/img/vector-2.svg");
+    -webkit-mask-image: url("./assets/img/vector-2.svg");
+    background:#BE229C;
+    width:100%;
+    height:100%;
+    @extend .maskCommonCss;
+}
+.rc-hero-bottom-left-bg{
+    mask-image: url("./assets/img/vector-3.svg");
+    -webkit-mask-image: url("./assets/img/vector-3.svg");
+    background:#22B5BE;
+    width:100%;
+    height:100%;
+    @extend .maskCommonCss;
+}
+.rc-hero-bottom-right-bg{
+    mask-image: url("./assets/img/vector-4.svg");
+    -webkit-mask-image: url("./assets/img/vector-4.svg");
+    background:#FFC93E;
+    width:100%;
+    height:100%;
+    @extend .maskCommonCss;
+}
+.rc-hero-left-bottom{
+
+}
+.to-bottom-text{
+    writing-mode: vertical-rl;
+}
+@media all and (max-width:1550px) {
+    .light{
+        left:50%;
+    }
+}
+@media all and (max-width:1440px) {
+    .light{
+        left:43%;
+    }
+}
+
+@media all and (max-width:1366px) {
+    .light{
+        left:45%;
+    }
+}
+@media all and (max-width:1280px) {
+    .light{
+        left:40%;
+        top:-45px;
+    }
+}
+@media all and (max-width:1200px) {
+    .light{
+        left:50%;
+        top:-45px;
+    }
+}
+@media all and (max-width:1024px) {
+    .light{
+        left:37%;
+        top:-50px;
+    }
+}
+@media all and (max-width:767px) {
+    .rc-path{
+        background-image:url("./assets/img/mobile-path.png");
+        background-position: right 2% top -5px ;
+    }
+    .light{
+        left:25%;
+        top:-50px;
+    }
+    .star{
+        width:94px;
+        height:94px;
+    }
+   .left-image > img{
+        width:167px;
+        height:200px;
+    }
+    img.left-circle{
+        width:100px;
+        height:100px;
+        bottom:50px;
+        right:-85px;
+    }
+}

@@ -14,6 +14,9 @@
 // import { generateMetaObject } from 'src/utils/generate-meta-data';
 // // import { draftMode } from 'next/headers';
 
+import Hero from '@components/hero';
+import {heroProps} from  "@components/hero/mock-data";
+
 // // const getPageData = cache(async () => {
 // //   let data;
 // //   const { isEnabled } = draftMode();
@@ -90,9 +93,7 @@
 export default async function Event() {
   return (
     <>
-      <div className="section-padding-primary">
-        <h2>Event</h2>
-      </div>
+      <Hero  {...heroProps} />
     </>
   );
 }
