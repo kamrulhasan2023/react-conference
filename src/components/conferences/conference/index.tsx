@@ -25,7 +25,7 @@ const Conference = ({title,description,startDate, count}:IConference) => {
                         </div>
                     </div>
                       {/* divider */}
-                    <div className="conference-divider px-10">
+                    <div className={`${styles['conference-divider']} px-10`}>
                         <div className={`${styles['divider-icon']}`}>
                             <FaBolt></FaBolt>
                         </div>
@@ -34,7 +34,7 @@ const Conference = ({title,description,startDate, count}:IConference) => {
                 </div>
                
                 {/* right side */}
-                <div className={`conference-right w-[44%] ${isEven ? "text-right": ""}`}>
+                <div className={`conference-right w-[44%] mt-[14px] ${isEven ? "text-right": ""}`}>
                     <span className="conference-date">02 September, 2023</span>
                 </div>
             </div>
