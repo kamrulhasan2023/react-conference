@@ -14,8 +14,11 @@
 // import { generateMetaObject } from 'src/utils/generate-meta-data';
 // // import { draftMode } from 'next/headers';
 
+import Sponsors from '@components/Sponsors';
+import { sponsors } from '@components/Sponsors/mock-data';
 import Hero from '@components/hero';
 import {heroProps} from  "@components/hero/mock-data";
+
 
 // // const getPageData = cache(async () => {
 // //   let data;
@@ -94,6 +97,7 @@ export default async function Event() {
   return (
     <>
       <Hero  {...heroProps} />
+	  <Sponsors {...sponsors} />
     </>
   );
 }

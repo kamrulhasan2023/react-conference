@@ -16,4 +16,5 @@ if (shouldAnalyzeBundles) {
   nextConfig = withBundleAnalyzer(nextConfig);
 }
 
+
 module.exports = nextConfig;
