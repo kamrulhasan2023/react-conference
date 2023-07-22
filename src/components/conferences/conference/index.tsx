@@ -4,7 +4,7 @@ import { FaBolt } from "react-icons/fa6";
 // styles
 import styles from "./conference.module.scss";
 
-const Conference = ({title,description,startDate, count}:IConference) => {
+const Conference = ({name,slogan,startDate, count}:IConference) => {
     const isEven = (count + 1 ) %2 === 0;
     return (
         <div className="single-conference-container">
@@ -18,10 +18,12 @@ const Conference = ({title,description,startDate, count}:IConference) => {
                                 <div className="indicator-circle-inner w-[6px] h-[6px] bg-white rounded-full ">
                                 </div>
                             </div>
-                            <h4 className="text-[#111D5E] text-[18px] font-medium">Freezing Edge 2023</h4>
+                            <h4 className="text-[#111D5E] text-[18px] font-medium capitalize">{name}</h4>
                         </div>
                         <div className="pl-8">
-                            <p className="text-sm text-[#617187]">The edge isnt bleeding, its freezing!</p>
+                            <p className="text-sm text-[#617187]">
+								{slogan}
+							</p>
                         </div>
                     </div>
                       {/* divider */}
@@ -35,7 +37,9 @@ const Conference = ({title,description,startDate, count}:IConference) => {
                
                 {/* right side */}
                 <div className={`conference-right w-[44%] mt-[14px] ${isEven ? "text-right": ""}`}>
-                    <span className="conference-date">02 September, 2023</span>
+                    <span className="conference-date">
+						{startDate}
+					</span>
                 </div>
             </div>
         </div>

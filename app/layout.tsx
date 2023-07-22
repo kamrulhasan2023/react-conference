@@ -35,7 +35,7 @@ export default async function RootLayout({
           </div>
         )}
         <Header {...headerProps} />
-        {children}
+		{children}
         <Footer />
       </body>
     </html>
