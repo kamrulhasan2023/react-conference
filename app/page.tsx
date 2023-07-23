@@ -15,9 +15,12 @@
 // // import { draftMode } from 'next/headers';
 
 import Conferences from '@components/conferences';
+import Sponsors from '@components/Sponsors';
+import { sponsors } from '@components/Sponsors/mock-data';
 import Hero from '@components/hero';
 import {heroProps} from  "@components/hero/mock-data";
 import {conferencesProps} from  "@components/conferences/mock-data";
+
 
 // // const getPageData = cache(async () => {
 // //   let data;
@@ -96,7 +99,8 @@ export default async function Event() {
   return (
     <>
       <Hero  {...heroProps} />
-      <Conferences {...conferencesProps} />
+      <Conferences  {...conferencesProps} />
+	    <Sponsors {...sponsors} />
     </>
   );
 }
