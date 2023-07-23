@@ -10,7 +10,10 @@ const Conferences = ({title,conferences}:IConferences) => {
         <h2 className='lg:text-[48px] text-xl font-bold text-center'>{title}</h2>
         <div className="pt-10">
           {
-            conferences.map((conference,idx) =>  <Conference count={idx} key={conference.id}  {...conference} ></Conference> )
+            conferences.map((conference,idx) =>  {
+              const isLastItem = (idx + 1) === conferences.length;
+              return <Conference count={idx} key={conference.id} isLastItem={isLastItem}  {...conference} ></Conference> 
+            })
           }
         </div>
       </div>

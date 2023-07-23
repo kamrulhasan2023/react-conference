@@ -5,7 +5,5 @@ export interface IConferences  {
         title: string;
         description:string;
         startDate: string;
-        isAlter: boolean;
-        isLastItem? : boolean;
     }>;
 }

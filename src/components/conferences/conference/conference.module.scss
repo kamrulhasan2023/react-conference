@@ -7,26 +7,40 @@
 .divider-icon{
     width:48px;
     height:48px;
-    border:1px solid #FFC93E;
+    color:#CDCDCD;
+    border: 1px solid #CDCDCD;
     border-radius:50%;
     font-size:24px;
-    color:#FFC93E;
-    background:#FFF9EB;
+    background:#F9FAFB;
     display:flex;
     justify-content:center;
     align-items:center;
+    transition: all 0.3s ease-in-out;
 }
-.conference-divider{
-    position:relative;
+.single-conference-container:hover .divider-icon{
+    color:#FFC93E;
+    background:#FFF9EB;
+    border:1px solid #FFC93E;
 }
-.conference-divider:after{
-    content: "";
-    width:2px;
-    height:100px;
-    min-height:100px;
-    background-color:#FFC93E;
-    left:50%;
-    position:absolute;
-    margin:6px 0;
-    margin-bottom:20px;
+.divider-line{
+    height: calc(100% - 60px );
+    transition: all 0.3s ease-in-out;
 }
+.single-conference-container:hover .divider-line
+{
+    background:#FFC93E
+}
+// .conference-divider{
+//     position:relative;
+// }
+// .conference-divider:after{
+//     content: "";
+//     width:2px;
+//     height:100px;
+//     min-height:100px;
+//     background-color:#FFC93E;
+//     left:50%;
+//     position:absolute;
+//     margin:6px 0;
+//     margin-bottom:20px;
+// }

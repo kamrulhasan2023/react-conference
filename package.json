@@ -19,6 +19,7 @@
     "analyze": "ANALYZE=true next build"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.17",
     "@next/bundle-analyzer": "^13.4.1",
     "@portabletext/react": "^2.0.1",
     "@portabletext/types": "^2.0.2",

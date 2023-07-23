@@ -1,41 +1,49 @@
+"use client";
 import React from 'react';
 import {IConference} from "./interface";
 import { FaBolt } from "react-icons/fa6";
 // styles
 import styles from "./conference.module.scss";
 
-const Conference = ({title,description,startDate, count}:IConference) => {
+const Conference = ({title,description,startDate, count, isLastItem}:IConference) => {
+    console.log(isLastItem);
     const isEven = (count + 1 ) %2 === 0;
     return (
-        <div className="single-conference-container">
-            <div className={`single-conference max-w-[1088px] mx-auto  flex justify-center  ${isEven ? "flex-row-reverse" : ""}  }`}>
+        <div className={`${styles['single-conference-container']}`}>
+            <div className={`single-conference xl:max-w-[1088px] mx-auto flex justify-center xl:items-start items-center xl:flex-row flex-col-reverse ${isEven ? "xl:flex-row-reverse" : ""}  }`}>
             {/* left side */}
-                <div className={`conference-left flex w-[56%]  ${isEven ? "flex-row-reverse" : ""}`}>
-                    <div className={`${styles['conference-content']} w-full `}>
+                <div className={`conference-left flex xl:flex-row flex-row-reverse  xl:w-[56%] w-[95%]  ${isEven ? "xl:flex-row-reverse" : ""}`}>
+                    <div className={`${styles['conference-content']} w-full h-max `}>
                         <div className="flex items-center gap-4 pb-[10px]">
                             {/* circle */}
                             <div className="indicator-circle w-4 h-4 bg-[#FFC93E] rounded-full flex justify-center items-center">
                                 <div className="indicator-circle-inner w-[6px] h-[6px] bg-white rounded-full ">
                                 </div>
                             </div>
-                            <h4 className="text-[#111D5E] text-[18px] font-medium">Freezing Edge 2023</h4>
+                            <h4 className="text-[#111D5E] text-[18px] font-medium">
+                                {title}
+                            </h4>
                         </div>
                         <div className="pl-8">
-                            <p className="text-sm text-[#617187]">The edge isnt bleeding, its freezing!</p>
+                            <p className="text-sm text-[#617187]">
+                                {description}
+                            </p>
                         </div>
                     </div>
-                      {/* divider */}
-                    <div className={`${styles['conference-divider']} px-10`}>
+                    {/* divider */}
+                    <div className={`conference-divider xl:px-10 pl-6 pr-5 flex items-center justify-start flex-col gap-[6px]`}>
                         <div className={`${styles['divider-icon']}`}>
                             <FaBolt></FaBolt>
                         </div>
-                        <div className="divider-line" ></div>
+                        <div className={`${styles['divider-line']} bg-[#CDCDCD] w-[2px] max-h-full xl:min-h-[100px] min-h-[131px] mb-[6px] ${isLastItem ? "hidden" : ""}`} ></div>
                     </div>
                 </div>
                
                 {/* right side */}
-                <div className={`conference-right w-[44%] mt-[14px] ${isEven ? "text-right": ""}`}>
-                    <span className="conference-date">02 September, 2023</span>
+                <div className={`conference-right xl:w-[44%] w-[95%] mt-[14px] xl:pl-0 pl-[96px] pb-[14px] ${isEven ? "xl:text-right": "" }`}>
+                    <span className="conference-date text-[#617187] text-sm">
+                        {startDate}
+                    </span>
                 </div>
             </div>
         </div>

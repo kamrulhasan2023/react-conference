@@ -7,21 +7,18 @@ export const conferencesProps:IConferences = {
             title: "Freezing Edge 2023",
             description:"The edge isn't bleeding, it's freezing!",
             startDate: "02 September, 2023",
-           
         },
         {
             id:2,
             title: "Freezing Edge 2023",
             description:"The edge isn't bleeding, it's freezing!",
             startDate: "02 September, 2023",
-           
         },
         {
             id:3,
             title: "Freezing Edge 2023",
             description:"The edge isn't bleeding, it's freezing!",
-            startDate: "02 September, 2023",
-           
+          startDate: "02 September, 2023",
         },
         {
             id:4,
@@ -35,8 +32,6 @@ export const conferencesProps:IConferences = {
             title: "Freezing Edge 2023",
             description:"The edge isn't bleeding, it's freezing!",
             startDate: "02 September, 2023",
-            isAlter: false,
-            isLastItem : true,
         }
     ]
 
