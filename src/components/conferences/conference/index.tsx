@@ -9,7 +9,7 @@ const Conference = ({title,description,startDate, count, isLastItem}:IConference
     const isEven = (count + 1 ) %2 === 0;
     return (
         <div className={`${styles['single-conference-container']}`}>
-            <div className={`single-conference xl:max-w-[1088px] mx-auto flex justify-center xl:items-start items-center xl:flex-row flex-col-reverse ${isEven ? "xl:flex-row-reverse" : ""}  }`}>
+            <div className={`single-conference xl:max-w-[1088px] mx-auto flex justify-center xl:items-start items-center xl:flex-row flex-col-reverse relative ${isEven ? "xl:flex-row-reverse" : ""}  }`}>
             {/* left side */}
                 <div className={`conference-left flex xl:flex-row flex-row-reverse  xl:w-[56%] w-[95%]  ${isEven ? "xl:flex-row-reverse" : ""}`}>
                     <div className={`${styles['conference-content']} w-full h-max `}>
@@ -39,7 +39,7 @@ const Conference = ({title,description,startDate, count, isLastItem}:IConference
                 </div>
                
                 {/* right side */}
-                <div className={`conference-right xl:w-[44%] w-[95%] mt-[14px] xl:pl-0 pl-[96px] pb-[14px] ${isEven ? "xl:text-right": "" }`}>
+                <div className={`conference-right xl:w-[44%] w-[95%] mt-[14px] xl:pl-0 pl-[96px] pb-[14px] xl:static absolute bottom-[100%] ${isEven ? "xl:text-right": "" }`}>
                     <span className="conference-date text-[#617187] text-sm">
                         {startDate}
                     </span>
