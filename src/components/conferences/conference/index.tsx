@@ -6,7 +6,6 @@ import { FaBolt } from "react-icons/fa6";
 import styles from "./conference.module.scss";
 
 const Conference = ({title,description,startDate, count, isLastItem}:IConference) => {
-    console.log(isLastItem);
     const isEven = (count + 1 ) %2 === 0;
     return (
         <div className={`${styles['single-conference-container']}`}>
