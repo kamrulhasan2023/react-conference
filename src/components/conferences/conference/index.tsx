@@ -4,8 +4,9 @@ import {IConference} from "./interface";
 import { FaBolt } from "react-icons/fa6";
 // styles
 import styles from "./conference.module.scss";
+import Link from 'next/link';
 
-const Conference = ({name,slogan,startDate, count, isLastItem}:IConference) => {
+const Conference = ({id,name,slogan,startDate, count, isLastItem}:IConference) => {
     const isEven = (count + 1 ) %2 === 0;
     const date = new Date (startDate)
     const eventDate = date.toLocaleString('default', { month: 'long' }) + " " + date.getDate() + ", " + date.getFullYear();
@@ -22,8 +23,8 @@ const Conference = ({name,slogan,startDate, count, isLastItem}:IConference) => {
                                 <div className="indicator-circle-inner w-[6px] h-[6px] bg-white rounded-full ">
                                 </div>
                             </div>
-                            <h4 className="text-[#111D5E] text-[18px] font-medium">
-                                {name}
+                            <h4 className="text-[#111D5E] text-[18px] font-medium capitalize">
+                                <Link href={`/conference/${id}`} >{name}</Link>
                             </h4>
                         </div>
                         <div className="pl-8">
