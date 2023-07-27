@@ -30,17 +30,11 @@
 {
     background:#FFC93E
 }
-// .conference-divider{
-//     position:relative;
-// }
-// .conference-divider:after{
-//     content: "";
-//     width:2px;
-//     height:100px;
-//     min-height:100px;
-//     background-color:#FFC93E;
-//     left:50%;
-//     position:absolute;
-//     margin:6px 0;
-//     margin-bottom:20px;
-// }
+@media all and (max-width:767px){
+    .conference-content{
+        padding:18px 10px;
+    }
+    .single-conference-container{
+        margin-left:-16px;
+    }
+}
