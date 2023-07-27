@@ -1,3 +1,4 @@
+"use client";
 // import Hero from '@sections/hero';
 // import { heroProps } from '@sections/hero/mock-data';
 // import { Metadata } from 'next';
@@ -13,6 +14,8 @@
 // import { WithContext, Organization } from 'schema-dts';
 // import { generateMetaObject } from 'src/utils/generate-meta-data';
 // // import { draftMode } from 'next/headers';
+// apollo
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 
 import Conferences from '@components/conferences';
 import Sponsors from '@components/Sponsors';
@@ -96,10 +99,18 @@ import {conferencesProps} from  "@components/conferences/mock-data";
 // }
 
 export default async function Event() {
+  // graphql client
+	const client = new ApolloClient({
+    uri: 'https://api.react-finland.fi/graphql',
+    cache: new InMemoryCache(),
+    });
+  
   return (
     <>
       <Hero  {...heroProps} />
-      <Conferences  {...conferencesProps} />
+      <ApolloProvider client={client}>
+        <Conferences  {...conferencesProps} />
+      </ApolloProvider>
 	    <Sponsors {...sponsors} />
     </>
   );

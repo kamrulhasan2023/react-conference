@@ -5,8 +5,11 @@ import { FaBolt } from "react-icons/fa6";
 // styles
 import styles from "./conference.module.scss";
 
-const Conference = ({title,description,startDate, count, isLastItem}:IConference) => {
+const Conference = ({name,slogan,startDate, count, isLastItem}:IConference) => {
     const isEven = (count + 1 ) %2 === 0;
+    const date = new Date (startDate)
+    const eventDate = date.toLocaleString('default', { month: 'long' }) + " " + date.getDate() + ", " + date.getFullYear();
+    
     return (
         <div className={`${styles['single-conference-container']}`}>
             <div className={`single-conference xl:max-w-[1088px] mx-auto flex justify-center xl:items-start items-center xl:flex-row flex-col-reverse relative ${isEven ? "xl:flex-row-reverse" : ""}  }`}>
@@ -20,12 +23,12 @@ const Conference = ({title,description,startDate, count, isLastItem}:IConference
                                 </div>
                             </div>
                             <h4 className="text-[#111D5E] text-[18px] font-medium">
-                                {title}
+                                {name}
                             </h4>
                         </div>
                         <div className="pl-8">
                             <p className="text-sm text-[#617187]">
-                                {description}
+                                {slogan}
                             </p>
                         </div>
                     </div>
@@ -41,7 +44,7 @@ const Conference = ({title,description,startDate, count, isLastItem}:IConference
                 {/* right side */}
                 <div className={`conference-right xl:w-[44%] w-[95%] mt-[14px] xl:pl-0 pl-[96px] pb-[14px] xl:static absolute bottom-[100%] ${isEven ? "xl:text-right": "" }`}>
                     <span className="conference-date text-[#617187] text-sm">
-                        {startDate}
+                        {eventDate}
                     </span>
                 </div>
             </div>
