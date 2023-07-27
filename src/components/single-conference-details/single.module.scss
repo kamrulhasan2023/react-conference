@@ -1,0 +1,22 @@
+.details-container {
+  position:relative;
+  top:0;
+  left:0;
+  .list-item{
+ 
+    font-size:30px;
+    position:absolute;
+    top:0;
+    left:0;
+    width:200px;
+  }
+  .item-content{
+     background:grey;
+     padding:20px;
+  }
+}
+
+
+
+
+
