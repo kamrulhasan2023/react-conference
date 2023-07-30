@@ -27,7 +27,7 @@ export default function Header({ logo, menuItems }: IHeader) {
   }
 
   return (
-    <header role="presentation" className="fixed w-full z-50" style={{backgroundColor:  navColor}}>
+    <header role="presentation" className="fixed top-0 w-full z-50" style={{backgroundColor:  navColor}}>
       <Container>
         <div className="flex lg:items-center lg:justify-between py-9 lg:py-8">
           {/* <h1 className="text-4xl text-white">

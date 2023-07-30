@@ -24,7 +24,7 @@ const Conference = ({id,name,slogan,startDate, count, isLastItem}:IConference) =
                                 </div>
                             </div>
                             <h4 className="text-[#111D5E] text-[18px] font-medium capitalize">
-                                <Link href={`/conference/${id}`} >{name}</Link>
+                                <Link href={`/conference/?id=${id}`} >{name}</Link>
                             </h4>
                         </div>
                         <div className="pl-8">

@@ -32,7 +32,7 @@ module.exports = {
       transparent: 'transparent',
       current: 'currentColor',
       primary: {
-        DEFAULT: 'rgb(var(--color-primary) / <alpha-value>)',
+        DEFAULT: '#0A142F',
         light: 'rgb(var(--color-primary-light) / <alpha-value>)',
         thin: 'rgb(var(--color-primary-thin) / <alpha-value>)',
       },
@@ -95,7 +95,7 @@ module.exports = {
       lg: [
         '1.25rem',
         {
-          lineHeight: '1.2',
+          lineHeight: '2',
         },
       ],
       xl: [
@@ -117,7 +117,7 @@ module.exports = {
         },
       ],
       '4xl': [
-        '2.5rem',
+        '3rem',
         {
           lineHeight: '1.2',
         },
