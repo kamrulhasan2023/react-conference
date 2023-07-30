@@ -1,0 +1,10 @@
+.tab-control{
+    transition: all 0.3s ease-in-out;
+}
+.tab-control:hover{
+    background: #FFC93E;
+    cursor:move;
+    .icon-container{
+        background: var(--white);
+    }
+}

@@ -1,10 +1,14 @@
 "use client";
 import React, { FC, useState } from 'react';
 import { ReactSortable } from "react-sortablejs";
-import {ItemType} from "./interface";
+import {ItemType, ITabContentType} from "./interface";
 import { useSearchParams } from 'next/navigation'
 import { gql, useQuery } from '@apollo/client';
 import  {tabs} from "./mock-data";
+import { BsArrowDownUp } from "react-icons/bs";
+
+// styles
+import styles from "./single.module.scss";
 
 const SingleConferenceDetails : FC = () => {
     // getting query id
@@ -79,14 +83,27 @@ const SingleConferenceDetails : FC = () => {
                 <h3 className="text-lg text-primary">{conference.slogan}</h3>
             </div>
 
-           <div className="details-accordion-container">
-                <ReactSortable list={state} setList={setState}>
-                    {state.map((item) => (
-                        <div key={item.id} className="border-[1px] border-[#FF00FF] py-5 mb-2">{item.name}</div>
-                    ))}
-                </ReactSortable>
-                <div>
-                    
+           <div className="details-accordion-container flex gap-10">
+                {/* tab */}
+                <div className="max-w-[365px] w-full">
+                    <ReactSortable list={state} setList={setState}>
+                        {state.map((item) => (
+                            <div 
+                                key={item.id}  
+                                className={`flex items-center border border-[#D9D9D9]/[0.5] rounded-lg mb-8 lg:gap-11 gap-[39px] p-2 ${styles['tab-control']} `}
+                            >
+                                <div className="w-14 h-14 bg-[#FFFCF6] flex items-center justify-center icon-container">
+                                    <BsArrowDownUp className="text-[25px] text-[#FFC93E]" > </BsArrowDownUp>
+                                </div>
+                                <h3 className="text-primary text-lg font-bold ">{item.name}</h3>
+                            </div>
+                            
+                        ))}
+                    </ReactSortable>
+                </div>
+                {/* tab content */}
+                <div className="max-w-[904px]">
+
                 </div>
            </div>
         </div>
